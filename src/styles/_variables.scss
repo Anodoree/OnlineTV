@@ -1,0 +1,32 @@
+$white: #fff;
+$black: #000;
+$bg-gradient: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+$bg-gradient-safe: rgb(50,108,255);
+$bg-gradient-safe-shadow: rgba(50, 108, 255, 0.5);
+
+@mixin breakpoint($point) {
+    @if $point == xxlg {
+        @media (max-width: 1460px) {@content;}
+    }
+    @else if $point == xlg {
+        @media (max-width: 1380px) {@content;}
+    }
+    @else if $point == lg {
+        @media (max-width: 992px) {@content;}
+    }
+    @else if $point == md {
+        @media (max-width: 768px) {@content;}
+    }
+    @else if $point == sm {
+        @media (max-width: 576px) {@content;}
+    }
+    @else if $point == sm-special-1 {
+        @media (max-width: 510px) {@content;}
+    }
+    @else if $point == sm-special-2 {
+        @media (max-width: 425px) {@content;}
+    }
+    @else if $point == xs {
+        @media (max-width: 320px) {@content;}
+    }
+}

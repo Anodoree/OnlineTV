@@ -1,0 +1,42 @@
+header
+    .header
+        a(href="#").logo
+            img(src="images/logo.svg", alt="Logo")
+        nav
+            ul.nav 
+                li.nav-item 
+                    a(href="#").nav-link.active Home 
+                li.nav-item 
+                    a(href="#").nav-link TV&nbsp;Shows 
+                li.nav-item 
+                    a(href="#").nav-link Movies
+                li.nav-item 
+                    a(href="#").nav-link Series
+        ul.control 
+            li.control-item
+                button.control-btn.control-btn_search 
+            li.control-item
+                button.control-btn.control-btn_notice
+            li.control-item
+                button.control-btn.control-btn_account
+    #hamburger
+        .switch
+            input#switch(type="checkbox" onclick="switching()")
+            label(for="switch")
+        #mobile
+            ul.mobile-nav 
+                li.mobile-nav-item 
+                    a(href="#").mobile-nav-link.active Home 
+                li.mobile-nav-item 
+                    a(href="#").mobile-nav-link TV&nbsp;Shows 
+                li.mobile-nav-item 
+                    a(href="#").mobile-nav-link Movies
+                li.mobile-nav-item 
+                    a(href="#").mobile-nav-link Series
+            ul.mobile-control 
+                li.mobile-control-item
+                    button.mobile-control-btn.mobile-control-btn_search 
+                li.mobile-control-item
+                    button.mobile-control-btn.mobile-control-btn_notice
+                li.mobile-control-item
+                    button.mobile-control-btn.mobile-control-btn_account
