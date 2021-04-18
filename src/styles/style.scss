@@ -317,7 +317,7 @@ button {
     max-width: 51rem;
     padding: 12.1rem 5rem 20.4rem .5rem;
     background-color: $black;
-    box-shadow: 100px 0px 100px $black;
+    box-shadow: 10rem 0 10rem 3rem $black;
     @include breakpoint (xxlg) {
         padding-right: .5rem;
     }
@@ -347,10 +347,13 @@ button {
         margin-top: 0;
         margin-bottom: 5.6rem;
         @include breakpoint (lg) {
-            flex-grow: 1;
             text-shadow: .4rem .4rem .4rem $black;
             font-size: 6rem;
             margin-left: 1rem;
+            margin-bottom: auto;
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 5rem 5rem rgba(255, 255, 255, 0.3);
+            max-width: 39rem;
         }
         @include breakpoint (md) {
             flex-grow: 0;
