@@ -80,7 +80,7 @@ button {
 .logo {
     margin-left: .5rem;
     & > img {
-        @include breakpoint (sm) {
+        @include breakpoint (lg) {
             height: 50px;
         }
     }
